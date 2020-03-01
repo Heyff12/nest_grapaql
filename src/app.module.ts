@@ -6,7 +6,7 @@ import { join } from 'path'
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CatsModule } from './cats/cats.module';
+import { CatsModule } from './cats_pre/cats.module';
 import { ConfigModule } from './config/config.module';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';

@@ -11,7 +11,7 @@ async function bootstrap() {
   });
   app.use(compression());
   app.use(helmet());
-  app.use(csurf());
+  // app.use(csurf());
   // app.enableCors()  //等同于 cors:true
   await app.listen(7777);
 }
