@@ -40,6 +40,6 @@ export class CatsController {
 
     @Get('error')
     async findError() {
-    throw new HttpException('Forbidden', HttpStatus.FORBIDDEN);
+        throw new HttpException('Forbidden', HttpStatus.FORBIDDEN);
     }
 }
