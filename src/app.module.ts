@@ -6,12 +6,13 @@ import { join } from 'path'
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CatsModule } from './cats_pre/cats.module';
+// import { CatsModule } from './cats_pre/cats.module';
+import { CatsModule } from './cats/cats.module';
 import { ConfigModule } from './config/config.module';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 // import { TypeOrmModule } from '@nestjs/typeorm';  //数据库 sql
-import { MongooseModule } from '@nestjs/mongoose';
+// import { MongooseModule } from '@nestjs/mongoose';
 import { GraphqlOptions } from './graphql.options'
 
 @Module({
@@ -22,7 +23,7 @@ import { GraphqlOptions } from './graphql.options'
     UsersModule,
     ConfigModule,
     // TypeOrmModule.forRoot(),
-    MongooseModule.forRoot('mongodb://localhost:27017/nest'),
+    // MongooseModule.forRoot('mongodb://localhost:27017/nest'),
     // GraphQLModule.forRoot({
     //   debug: true,
     //   playground: true,
